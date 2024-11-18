@@ -20,7 +20,7 @@ greet('SHAHID');
 
 
 
-// // ----------------------------------------------------------------
+// ----------------------------------------------------------------
 // Array in js
 let fruits = new Array('Apple', 'Banana', 'Orange'); //using new array like array constructor
 console.log(fruits);
@@ -66,8 +66,18 @@ const numbers = [1, 2, 3, 4, 5];      // same display array screen
 numbers.forEach((curElement) => {
   console.log(curElement * 2);
 });
+// let numbers = [1, 2, 3, 4, 5];
+// const doubleValue = numbers.map((curElement) => {
+//   return(curElement * 2);  // same Array with modified new array in sequence form
+// });
+// console.log(doubleValue);
+let result = numbers.filter((curElement) => {
+  return curElement > 2;
+})
+console.log(result);
 
-const doubleValue = numbers.map((curElement) => {
-  return(curElement * 2);  // same Array with modified new array in sequence form
-});
-console.log(doubleValue);
+const names = ['shahid', 'shahid1', 'shahid2', 'shahid3'];
+const prefixNames = names.map((curElement) => {
+  return `Mr ${curElement} `;	
+})
+console.log(prefixNames);   
